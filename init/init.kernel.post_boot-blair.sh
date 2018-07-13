@@ -71,40 +71,6 @@ function configure_zram_parameters() {
 	fi
 }
 
-function configure_read_ahead_kb_values() {
-	MemTotalStr=`cat /proc/meminfo | grep MemTotal`
-	MemTotal=${MemTotalStr:16:8}
-
-	dmpts=$(ls /sys/block/*/queue/read_ahead_kb | grep -e dm -e mmc)
-
-	# Set 128 for <= 6GB &
-	# set 512 for >= 8GB targets.
-	if [ $MemTotal -le 6291456 ]; then
-		ra_kb=128
-	else
-		ra_kb=512
-	fi
-	if [ -f /sys/block/mmcblk0/bdi/read_ahead_kb ]; then
-		echo $ra_kb > /sys/block/mmcblk0/bdi/read_ahead_kb
-	fi
-	if [ -f /sys/block/mmcblk0rpmb/bdi/read_ahead_kb ]; then
-		echo $ra_kb > /sys/block/mmcblk0rpmb/bdi/read_ahead_kb
-	fi
-	for dm in $dmpts; do
-		dm_dev=`echo $dm |cut -d/ -f4`
- 		if [ "$dm_dev" = "" ]; then
- 			is_erofs=""
- 		else
- 			is_erofs=`mount |grep erofs |grep "${dm_dev} "`
- 		fi
-		if [ "$is_erofs" = "" ]; then
-			echo $ra_kb > $dm
-		else
-			echo 128 > $dm
- 		fi
-	done
-}
-
 function configure_memory_parameters() {
 	# Set Memory parameters.
 
@@ -115,7 +81,6 @@ function configure_memory_parameters() {
 	# wsf Range : 1..1000 So set to bare minimum value 1.
 	echo 1 > /proc/sys/vm/watermark_scale_factor
 	configure_zram_parameters
-	configure_read_ahead_kb_values
 
 	#Spawn 1 kswapd threads which can help in fast reclaiming of pages
 	echo 1 > /proc/sys/vm/kswapd_threads
