@@ -188,6 +188,9 @@ debug.hwui.target_cpu_time_percent=30
 # Incremental FS
 ro.incremental.enable=true
 
+# Media
+debug.stagefright.c2inputsurface=-1
+
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
 
