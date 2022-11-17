@@ -95,6 +95,7 @@ PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 
 # Display
 PRODUCT_PACKAGES += \
+    init.qti.display_boot.rc \
     init.qti.display_boot.sh \
     libtinyxml2 \
     vndservicemanager
