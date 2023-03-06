@@ -22,6 +22,7 @@ TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a75
 
 # HIDL
 DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
+DEVICE_MATRIX_FILE := $(COMMON_PATH)/compatibility_matrix.xml
 
 # Kernel
 BOARD_BOOT_HEADER_VERSION := 3
