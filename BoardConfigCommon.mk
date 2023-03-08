@@ -55,3 +55,6 @@ TARGET_BOARD_PLATFORM := holi
 
 # QCOM hardware
 BOARD_USES_QCOM_HARDWARE := true
+
+# Inherit the proprietary files
+include vendor/realme/sm6375-common/BoardConfigVendor.mk
