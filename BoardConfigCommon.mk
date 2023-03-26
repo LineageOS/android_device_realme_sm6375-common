@@ -101,6 +101,9 @@ TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
 # Platform
 TARGET_BOARD_PLATFORM := holi
 
+# Properties
+TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
+
 # QCOM hardware
 BOARD_USES_QCOM_HARDWARE := true
 
