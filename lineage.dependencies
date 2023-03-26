@@ -1,0 +1,6 @@
+[
+  {
+    "repository":  "android_kernel_realme_sm6375",
+    "target_path": "kernel/realme/sm6375"
+  }
+]
