@@ -14,6 +14,7 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.service \
     android.hardware.bluetooth.audio@2.1-impl \
     android.hardware.soundtrigger@2.3-impl \
+    audio.bluetooth.default \
     audio.primary.holi \
     audio.r_submix.default \
     audio.usb.default \
@@ -48,6 +49,10 @@ PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
     frameworks/av/services/audiopolicy/config/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
     frameworks/av/services/audiopolicy/config/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml
+
+# Bluetooth
+PRODUCT_PACKAGES += \
+    android.hardware.bluetooth.audio@2.0-impl
 
 # IPC router config
 PRODUCT_COPY_FILES += \
