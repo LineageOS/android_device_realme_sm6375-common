@@ -161,6 +161,21 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml \
     $(LOCAL_PATH)/configs/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml
 
+# Ramdisk
+PRODUCT_PACKAGES += \
+    init.class_main.sh \
+    init.qcom.early_boot.sh \
+    init.qcom.post_boot.sh \
+    init.qcom.sh
+
+PRODUCT_PACKAGES += \
+    fstab.default \
+    init.qcom.factory.rc \
+    init.qcom.rc \
+    init.qcom.test.rc \
+    init.recovery.qcom.rc \
+    ueventd.qcom.rc
+
 # RIL
 PRODUCT_PACKAGES += \
     CarrierConfigOverlay
