@@ -182,7 +182,7 @@ PRODUCT_PACKAGES += \
 
 # USB
 PRODUCT_PACKAGES += \
-    android.hardware.usb@1.2-service-qti
+    android.hardware.usb@1.3-service-qti
 
 # WiFi
 PRODUCT_PACKAGES += \
