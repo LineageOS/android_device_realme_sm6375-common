@@ -110,6 +110,10 @@ vendor.qcom.bluetooth.soc=hastings
 # Camera
 camera.disable_zsl_mode=true
 
+# Chipset
+ro.soc.manufacturer=Qualcomm
+ro.soc.model=SM6375
+
 # Crypto
 ro.crypto.dm_default_key.options_format.version=2
 ro.crypto.volume.metadata.method=dm-default-key
