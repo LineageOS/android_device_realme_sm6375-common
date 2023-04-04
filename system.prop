@@ -48,6 +48,10 @@ ro.nfc.port=I2C
 # NTP Server
 persist.backup.ntpServer="0.pool.ntp.org"
 
+
+# QC framework value-adds
+ro.vendor.qti.va_aosp.support=1
+
 # RIL
 DEVICE_PROVISIONED=1
 ril.subscription.types=NV,RUIM
