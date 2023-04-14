@@ -71,6 +71,16 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.device@1.0.vendor \
     vendor.qti.hardware.camera.postproc@1.0.vendor
 
+# DRM
+PRODUCT_PACKAGES += \
+    android.hardware.drm-service.clearkey \
+    android.hardware.drm@1.3.vendor
+
+# Health
+PRODUCT_PACKAGES += \
+    android.hardware.health@2.1-impl \
+    android.hardware.health@2.1-service
+
 # IPC router config
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config
@@ -186,6 +196,13 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml \
     $(LOCAL_PATH)/configs/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml
 
+# Radio
+PRODUCT_PACKAGES += \
+    android.hardware.radio@1.5.vendor \
+    android.hardware.radio.config@1.2.vendor \
+    android.hardware.radio.deprecated@1.0.vendor \
+    android.hardware.secure_element@1.2.vendor
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.class_main.sh \
@@ -205,12 +222,20 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     CarrierConfigOverlay
 
+# Sensors
+PRODUCT_PACKAGES += \
+    android.hardware.sensors@2.0-service.multihal
+
 # Telephony
 PRODUCT_PACKAGES += \
     telephony-ext
 
 PRODUCT_BOOT_JARS += \
     telephony-ext
+
+# Thermal
+PRODUCT_PACKAGES += \
+    android.hardware.thermal@2.0-service.qti
 
 # USB
 PRODUCT_PACKAGES += \
