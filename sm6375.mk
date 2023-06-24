@@ -81,7 +81,8 @@ PRODUCT_PACKAGES += \
     libsdmcore \
     libsdmutils \
     libtinyxml \
-    memtrack.default
+    memtrack.default \
+    vndservicemanager
 
 PRODUCT_PACKAGES += \
     android.hardware.graphics.common-V1-ndk_platform.vendor \
