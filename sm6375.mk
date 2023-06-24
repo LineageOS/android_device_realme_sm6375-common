@@ -134,6 +134,10 @@ PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey \
     android.hardware.drm@1.3.vendor
 
+# Fastbootd
+PRODUCT_PACKAGES += \
+    fastbootd
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
