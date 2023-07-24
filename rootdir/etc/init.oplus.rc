@@ -23,7 +23,9 @@ on early-boot
     write /sys/bus/msm_subsys/devices/subsys10/restart_level RELATED
 
 on boot
+    # Display
     chown system system /sys/kernel/oplus_display/dump_info
+    chown system system /sys/kernel/oplus_display/dynamic_osc_clock
     chown system system /sys/kernel/oplus_display/hbm
     chown system system /sys/kernel/oplus_display/seed
     chown system system /sys/kernel/oplus_display/LCM_CABC
@@ -45,6 +47,7 @@ on boot
     chown system system /sys/kernel/oplus_display/dsi_cmd_log_switch
     chown system system /dev/oplus_display
     chown system system /sys/kernel/oplus_display/failsafe
+    chown system system /sys/kernel/oplus_display/panel_serial_number
 
     chmod 0666 /sys/kernel/oplus_display/dump_info
     chmod 0666 /sys/kernel/oplus_display/hbm
@@ -69,6 +72,7 @@ on boot
     chmod 0666 /sys/kernel/oplus_display/dsi_cmd_log_switch
     chmod 0666 /dev/oplus_display
     chmod 0666 /sys/kernel/oplus_display/failsafe
+    chmod 0666 /sys/kernel/oplus_display/panel_serial_number
 
     # Sensors
     chown system system /sys/devices/platform/soc/soc:sensor_fb/adsp_notify
