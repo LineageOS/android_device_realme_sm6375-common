@@ -158,6 +158,16 @@ PRODUCT_PACKAGES += \
     libgnss
 
 PRODUCT_PACKAGES += \
+    apdr.conf \
+    flp.conf \
+    gnss_antenna_info.conf \
+    gps.conf \
+    izat.conf \
+    lowi.conf \
+    sap.conf \
+    xtwifi.conf
+
+PRODUCT_PACKAGES += \
     gnss@2.0-base.policy \
     gnss@2.0-xtra-daemon.policy \
     gnss@2.0-xtwifi-client.policy \
