@@ -395,6 +395,7 @@ PRODUCT_PACKAGES += \
     init.qcom.rc \
     init.recovery.qcom.rc \
     init.target.rc \
+    ueventd.oplus.rc \
     ueventd.qcom.rc
 
 # RCS
