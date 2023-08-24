@@ -4,3 +4,7 @@ ro.vendor.qti.va_odm.support=1
 # Radio
 ro.sys.reserve.integrate=true
 ro.vendor.oplus.radio.project=1
+ro.vendor.oplus.radio.sar_regionmark=FCC
+
+# SVN
+ro.build.version.svn=23
