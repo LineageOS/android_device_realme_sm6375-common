@@ -367,9 +367,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     fstab.default \
-    init.qcom.factory.rc \
     init.qcom.rc \
-    init.qcom.test.rc \
     init.recovery.qcom.rc \
     ueventd.qcom.rc
 
