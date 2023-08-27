@@ -52,6 +52,9 @@ on boot
     chmod 0666 /dev/oplus_display
     chmod 0666 /sys/kernel/oplus_display/failsafe
 
+    # Sensors
+    chown system system /sys/devices/platform/soc/soc:sensor_fb/adsp_notify
+
 on property:sys.boot_completed=1
     copy /vendor/etc/Oppo_QC_LTM_Commercial_SM8250_2020_01_15.pfm /mnt/vendor/persist/data/pfm/licenses/1000-1000-no-exp-1186717196.pfm
     chmod 0600 /mnt/vendor/persist/data/pfm/licenses/1000-1000-no-exp-1186717196.pfm
@@ -108,3 +111,9 @@ on property:sys.usb.ffs.ready=1 && property:sys.usb.config=rndis,diag,adb && pro
 on property:sys.usb.ffs.ready=1 && property:sys.usb.config=rndis,none,adb && property:sys.usb.configfs=1
     write /config/usb_gadget/g1/idVendor 0x22D9
     write /config/usb_gadget/g1/idProduct 0x2766
+
+service oplus_sensor_fb /odm/bin/oplus_sensor_fb
+    user system
+    group system
+    class late_start
+    oneshot
