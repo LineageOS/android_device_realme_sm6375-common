@@ -1,2 +1,6 @@
 # QC framework value-adds
 ro.vendor.qti.va_odm.support=1
+
+# Radio
+ro.sys.reserve.integrate=true
+ro.vendor.oplus.radio.project=1
