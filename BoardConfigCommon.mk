@@ -6,6 +6,8 @@
 
 COMMON_PATH := device/realme/sm6375-common
 
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+
 # A/B
 AB_OTA_UPDATER := true
 
