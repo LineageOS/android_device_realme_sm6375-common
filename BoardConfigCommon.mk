@@ -174,7 +174,7 @@ include device/qcom/sepolicy_vndr-legacy-um/SEPolicy.mk
 include hardware/oplus/sepolicy/qti/SEPolicy.mk
 
 # Vendor Security patch level
-BOOT_SECURITY_PATCH := 2023-06-05
+BOOT_SECURITY_PATCH := 2023-08-05
 VENDOR_SECURITY_PATCH := $(BOOT_SECURITY_PATCH)
 
 # Verified Boot

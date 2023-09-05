@@ -40,14 +40,11 @@ media.stagefright.thumbnail.prefer_hw_codecs=true
 mmp.enable.3g2=true
 persist.mm.enable.prefetch=true
 qcom.hw.aac.encoder=true
-vendor.mm.enable.qcom_parser=4044018
-
-# NFC
-ro.nfc.port=I2C
+ro.media.recorder-max-base-layer-fps=60
+vendor.mm.enable.qcom_parser=4039922
 
 # NTP Server
 persist.backup.ntpServer="0.pool.ntp.org"
-
 
 # QC framework value-adds
 ro.vendor.qti.va_aosp.support=1

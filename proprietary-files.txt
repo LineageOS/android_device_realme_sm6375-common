@@ -1,4 +1,4 @@
-# Proprietary files - from RMX3471_TP1A.220905.001 build, unless pinned
+# Proprietary files - from RMX3471_11.C.18_1180_202308031254 build, unless pinned
 
 # ADSP
 vendor/bin/adsprpcd

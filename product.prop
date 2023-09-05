@@ -20,3 +20,6 @@ bluetooth.profile.pan.nap.enabled=true
 bluetooth.profile.pan.panu.enabled=true
 bluetooth.profile.pbap.server.enabled=true
 bluetooth.profile.sap.server.enabled=false
+
+# GMS
+ro.opa.device_model_id=ga-oplus-skill-os121-211011
