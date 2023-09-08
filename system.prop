@@ -27,25 +27,6 @@ debug.sf.enable_hwc_vds=1
 debug.sf.latch_unsignaled=1
 dev.pm.dyn_samplingrate=1
 
-# Media
-media.aac_51_output_enabled=true
-media.settings.xml=/vendor/etc/media_profiles_vendor.xml
-media.stagefright.enable-aac=true
-media.stagefright.enable-fma2dp=true
-media.stagefright.enable-http=true
-media.stagefright.enable-player=true
-media.stagefright.enable-qcp=true
-media.stagefright.enable-scan=true
-media.stagefright.thumbnail.prefer_hw_codecs=true
-mmp.enable.3g2=true
-persist.mm.enable.prefetch=true
-qcom.hw.aac.encoder=true
-ro.media.recorder-max-base-layer-fps=60
-vendor.mm.enable.qcom_parser=4039922
-
-# NTP Server
-persist.backup.ntpServer="0.pool.ntp.org"
-
 # QC framework value-adds
 ro.vendor.qti.va_aosp.support=1
 
@@ -53,9 +34,6 @@ ro.vendor.qti.va_aosp.support=1
 DEVICE_PROVISIONED=1
 ril.subscription.types=NV,RUIM
 telephony.lteOnCdmaDevice=1
-
-# Sensors
-persist.vendor.sensors.enable.mag_filter=true
 
 # Time
 persist.timed.enable=true
