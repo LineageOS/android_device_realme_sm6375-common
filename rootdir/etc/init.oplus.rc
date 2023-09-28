@@ -91,6 +91,10 @@ on boot
     chown cameraserver cameraserver /sys/kernel/tof_control/chip_enable
     chown cameraserver cameraserver /sys/kernel/tof_control/driver_debug
 
+on property:ro.boot.prjname=*
+    # Display
+    setprop ro.separate.soft ${ro.boot.prjname}
+
 on property:sys.boot_completed=1
     copy /vendor/etc/Oppo_QC_LTM_Commercial_SM8250_2020_01_15.pfm /mnt/vendor/persist/data/pfm/licenses/1000-1000-no-exp-1186717196.pfm
     chmod 0600 /mnt/vendor/persist/data/pfm/licenses/1000-1000-no-exp-1186717196.pfm
