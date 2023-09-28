@@ -1,0 +1,2 @@
+# Camera
+genfscon proc /qcom_flash     u:object_r:vendor_proc_flash:s0
