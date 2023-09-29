@@ -102,6 +102,7 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 BOARD_RAMDISK_USE_LZ4 := true
 
 TARGET_KERNEL_SOURCE := kernel/realme/sm6375
+TARGET_KERNEL_CONFIG := vendor/holi-qgki_defconfig
 
 # Kernel modules
 BOARD_VENDOR_KERNEL_MODULES_BLOCKLIST_FILE := $(COMMON_PATH)/modules.blocklist
