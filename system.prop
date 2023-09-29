@@ -2,12 +2,6 @@
 # system.prop
 #
 
-# Camera
-persist.vendor.camera.privapp.list=com.oneplus.camera,com.oppo.camera,com.oppo.engineermode,com.oplus.camera
-persist.camera.privapp.list=com.oneplus.camera,com.oppo.camera,com.oppo.engineermode,com.oplus.camera
-vendor.camera.aux.packagelist=android,com.oneplus.camera,com.oppo.camera,com.oppo.engineermode,com.oplus.camera
-vendor.camera.algo.jpeghwencode=0
-
 # Charger
 ro.charger.enable_suspend=true
 
