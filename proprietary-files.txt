@@ -657,18 +657,6 @@ vendor/lib64/libperipheral_client.so
 odm/lib/vendor.oplus.hardware.performance@1.0.so
 odm/lib64/vendor.oplus.hardware.performance@1.0.so
 
-# Perf IOP - from veux-user 13 TKQ1.221114.001 V14.0.4.0.TKCINXM release-keys
-system_ext/lib/vendor.qti.hardware.iop@2.0.so|46031630e8146a766e344b5b7cf9b34e5721176d
-system_ext/lib64/vendor.qti.hardware.iop@2.0.so|2f41e0a381a5f75e4321086e8ffbc674c98db1a4
-vendor/bin/hw/vendor.qti.hardware.iop@2.0-service|e5d53eeec5161df23fb0fb6a3994d430efedb1b8
-vendor/etc/init/vendor.qti.hardware.iop@2.0-service.rc|fd11367b2585702190ef2577ce2ce6fc68f3a2f8
-vendor/lib/libqti-iopd-client.so|a1c3c0623bf43af7448a988a9c4d9ceea85e27dc
-vendor/lib/vendor.qti.hardware.iop@1.0.so|3e72632e5b67555b6b1b07816ee73b4d19873049
-vendor/lib/vendor.qti.hardware.iop@2.0.so|71a72d48d921ba0130f256cffda754c55106c93b
-vendor/lib64/libqti-iopd-client.so|9e7561634158cd01b037e740e51cb22cd1119e04
-vendor/lib64/vendor.qti.hardware.iop@1.0.so|dd98ed98c2e256610d29ff87125864f8d7fedbd8
-vendor/lib64/vendor.qti.hardware.iop@2.0.so|cc384159b598d81bd778beaaac9ff95508f08842
-
 # QCV
 vendor/bin/init.qti.qcv.sh
 vendor/etc/init/init.qti.qcv.rc
