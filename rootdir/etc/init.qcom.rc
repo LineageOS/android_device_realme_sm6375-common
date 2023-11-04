@@ -28,6 +28,7 @@
 import /vendor/etc/init/hw/init.qcom.usb.rc
 import /vendor/etc/init/hw/init.oplus.rc
 import /vendor/etc/init/hw/init.target.rc
+import /vendor/etc/init/hw/init.device.rc
 
 on early-init
   # create symlink for vendor mount points
