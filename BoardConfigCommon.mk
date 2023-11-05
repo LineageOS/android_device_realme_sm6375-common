@@ -77,7 +77,9 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     vendor/lineage/config/device_framework_matrix.xml
 DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
 DEVICE_MATRIX_FILE := $(COMMON_PATH)/compatibility_matrix.xml
-ODM_MANIFEST_FILES := $(COMMON_PATH)/manifest_odm.xml
+
+ODM_MANIFEST_SKUS += oplus
+ODM_MANIFEST_OPLUS_FILES := $(COMMON_PATH)/manifest_odm.xml
 
 # Kernel
 BOARD_BOOT_HEADER_VERSION := 3
