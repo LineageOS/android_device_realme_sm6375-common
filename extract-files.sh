@@ -60,6 +60,9 @@ fi
 
 function blob_fixup() {
     case "${1}" in
+        system_ext/lib64/libwfdnative.so)
+            "${PATCHELF}" --remove-needed "android.hidl.base@1.0.so" "${2}"
+            ;;
         product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml)
             sed -i "s/\/my_product/\/product/" "${2}"
             ;;
