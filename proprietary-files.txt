@@ -654,48 +654,69 @@ vendor/bin/pm-service
 vendor/lib/libperipheral_client.so
 vendor/lib64/libperipheral_client.so
 
-# Perf
+# Perf (Oplus)
 odm/lib/vendor.oplus.hardware.performance@1.0.so
 odm/lib64/vendor.oplus.hardware.performance@1.0.so
-vendor/bin/hw/vendor.qti.hardware.perf@2.2-service
-vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc
-vendor/etc/perf/commonresourceconfigs.xml
-vendor/etc/perf/commonsysnodesconfigs.xml
-vendor/etc/perf/perfboostsconfig.xml
-vendor/etc/perf/perfconfigstore.xml
-vendor/etc/perf/targetconfig.xml
-vendor/etc/perf/targetresourceconfigs.xml
-vendor/lib/libperfconfig.so
-vendor/lib/libperfgluelayer.so
-vendor/lib/libperfioctl.so
-vendor/lib/libqti-perfd-client.so
-vendor/lib/libqti-perfd.so
-vendor/lib/libqti-util.so
-vendor/lib/libqti-utils.so
-vendor/lib64/liblearningmodule.so
-vendor/lib64/libmeters.so
-vendor/lib64/libperfconfig.so
-vendor/lib64/libperfgluelayer.so
-vendor/lib64/libperfioctl.so
-vendor/lib64/libqti-perfd-client.so
-vendor/lib64/libqti-perfd.so
-vendor/lib64/libqti-util.so
-vendor/lib64/libqti-utils.so
 
-# Perf LM
-vendor/etc/lm/AdaptLaunchFeature.xml
-vendor/etc/lm/AppClassifierFeature.xml
-vendor/etc/lm/GameOptimizationFeature.xml
-vendor/etc/lm/sPLHFeature.xml
-vendor/lib64/libadaptlaunch.so
-vendor/lib64/libappclassifier.so
-vendor/lib64/libgameoptfeature.so
-vendor/lib64/liblmutils-ns.so
-vendor/lib64/libmemperfd.so
-vendor/lib64/libmeters-ns.so
-vendor/lib64/libsplh.so
-vendor/lib64/vendor.qti.memory.pasrmanager@1.0.so
-vendor/lib64/vendor.qti.memory.pasrmanager@1.1.so
+# Perf - from veux-user 13 TKQ1.221114.001 V14.0.4.0.TKCINXM release-keys
+vendor/bin/hw/vendor.qti.hardware.perf@2.2-service|081d5dbbd246067067ecd56f31fcd1ee440e9d46
+vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc|459b4c23550a56ac545f78c6d391f3d7dd9ba45b
+vendor/etc/perf/commonresourceconfigs.xml|c03bd36054bb5d327ad12dc711b58b3f658d261c
+vendor/etc/perf/commonsysnodesconfigs.xml|63d293adfd5aa82551aa8fc0d30b38bffdcc497e
+vendor/etc/perf/perfboostsconfig.xml|da8d38b9f477464306da4d289c8343d34992097b
+vendor/etc/perf/perfconfigstore.xml|57ffd271b7733b9fb13496c40e69a56acaaf7d92
+vendor/etc/perf/targetconfig.xml|751d04cb14f9b44d2fe5a3669cecfe1ac46237bf
+vendor/etc/perf/targetresourceconfigs.xml|ee564bd4b95d380059032e2ffc6e46a4e95042d3
+vendor/lib/libperfconfig.so|537c5677f965b6c652729c2a1287700126bb811f
+vendor/lib/libperfgluelayer.so|ed207c49a4be05f81f9e51d38d62de3b6674a999
+vendor/lib/libperfioctl.so|00164c19fa1dbf534f15b0a8bc2fc8d3a11ee2fb
+vendor/lib/libqti-perfd-client.so|dd774ed25b6923b6e20668be8810f7042bb6e896
+vendor/lib/libqti-perfd.so|b239355fb2107f0df81cd510180d4bdcbf20c775
+vendor/lib/libqti-util.so|78bbb596a789f9de82d0fd8cd9ad400952a8581e
+vendor/lib/libqti-utils.so|3016ae3374b4de3240190d9f885c42cc3ce4d11d
+vendor/lib/vendor.qti.memory.pasrmanager@1.0.so|3cf7252c5d8e7525344ef44d740d5f241d0f1da5
+vendor/lib/vendor.qti.memory.pasrmanager@1.1.so|c4060599563daa6b81a70b3f6936db4b87174f52
+vendor/lib64/liblearningmodule.so|72cbcdbfa9a11424625aa468eea73855038ba800
+vendor/lib64/libmeters.so|e2881b626a46e7634e813ebaceda09889ad4b616
+vendor/lib64/libperfconfig.so|c69a504e3e9dd1c99770ee72cce77a9213ce6473
+vendor/lib64/libperfgluelayer.so|366f9b45ecc79d05e7b23dd1527ac78a531df739
+vendor/lib64/libperfioctl.so|f549443c16df6df58357c35566ec33ec4e1d394f
+vendor/lib64/libqti-perfd-client.so|ec304f3a6b8df679bbcc8b97fa09b794f6e26841
+vendor/lib64/libqti-perfd.so|3c2f5b48bb05cb0144b77da42414cefa285aa836
+vendor/lib64/libqti-util.so|edfedf2e31f21eaa43914bf3cd9c81c5437a99a3
+vendor/lib64/libqti-utils.so|1c9a0cb92802ba2314dafbe0152a7568323fff06
+vendor/lib64/vendor.qti.memory.pasrmanager@1.0.so|c058fe11f441d9f7843b6d72174549d7b02919d6
+vendor/lib64/vendor.qti.memory.pasrmanager@1.1.so|e03bf54f30ecbab68c53f4519c58a62075bc744c
+
+# Perf IOP - from veux-user 13 TKQ1.221114.001 V14.0.4.0.TKCINXM release-keys
+system_ext/lib/vendor.qti.hardware.iop@2.0.so|46031630e8146a766e344b5b7cf9b34e5721176d
+system_ext/lib64/vendor.qti.hardware.iop@2.0.so|2f41e0a381a5f75e4321086e8ffbc674c98db1a4
+vendor/bin/hw/vendor.qti.hardware.iop@2.0-service|e5d53eeec5161df23fb0fb6a3994d430efedb1b8
+vendor/etc/init/vendor.qti.hardware.iop@2.0-service.rc|fd11367b2585702190ef2577ce2ce6fc68f3a2f8
+vendor/lib/libqti-iopd-client.so|a1c3c0623bf43af7448a988a9c4d9ceea85e27dc
+vendor/lib/vendor.qti.hardware.iop@1.0.so|3e72632e5b67555b6b1b07816ee73b4d19873049
+vendor/lib/vendor.qti.hardware.iop@2.0.so|71a72d48d921ba0130f256cffda754c55106c93b
+vendor/lib64/libqti-iopd-client.so|9e7561634158cd01b037e740e51cb22cd1119e04
+vendor/lib64/vendor.qti.hardware.iop@1.0.so|dd98ed98c2e256610d29ff87125864f8d7fedbd8
+vendor/lib64/vendor.qti.hardware.iop@2.0.so|cc384159b598d81bd778beaaac9ff95508f08842
+
+# Perf LM - from veux-user 13 TKQ1.221114.001 V14.0.4.0.TKCINXM release-keys
+vendor/etc/lm/prekill/prekill_2GB.data|c731aed560f7a8f0ac077ec989cc9c6e106e4cc5
+vendor/etc/lm/prekill/prekill_4GB.data|d44007e12419b7e433ab26d3534d104fa4a88b72
+vendor/etc/lm/prekill/prekill_6GB.data|dbf72257628f2da4979726b046377673cb33d6e8
+vendor/etc/lm/AdaptLaunchFeature.xml|063ae6559fca4be506fee71eda99f70a5395e988
+vendor/etc/lm/AppClassifierFeature.xml|64f78a453b3335b9edf2bec4e4223a5d67c73876
+vendor/etc/lm/GameOptimizationFeature.xml|31d7ec8ff3da4982f800c100cf2885b6a34a9be5
+vendor/etc/lm/PreKillFeature.xml|6e6e7bc843c3632e8ddedf6299bd9f7d2e0878ef
+vendor/etc/lm/sPLHFeature.xml|c3f5e94a5cc34a648e3b084fc58b49bab7580b19
+vendor/lib64/libadaptlaunch.so|361f5c1f8b231c58e14cc7c3ea5c5dbbc6fdc999
+vendor/lib64/libappclassifier.so|5b914634c56d4e169cd1ce38acc9135315be2348
+vendor/lib64/libgameoptfeature.so|c0625136b080eb027d829efeaf6172be743376b3
+vendor/lib64/liblmutils-ns.so|4c44e75694a85b6997f837f7f8db2d8f84c4f733
+vendor/lib64/libmemperfd.so|87145a3b47a169486a675af6e42712252b1ca3e7
+vendor/lib64/libmeters-ns.so|b5b94a280aa935c7e4147afaa0e63fd9570c3317
+vendor/lib64/libprekill.so|0a19ee312b8cc0ecc094b958e8afa912fa1b24d9
+vendor/lib64/libsplh.so|ab50d0c632dadf25ebd7c68947da2099ae310c1b
 
 # QCV
 vendor/bin/init.qti.qcv.sh
