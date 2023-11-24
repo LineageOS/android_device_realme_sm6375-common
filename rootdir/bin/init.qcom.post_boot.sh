@@ -879,17 +879,7 @@ function configure_read_ahead_kb_values() {
         echo 512 > /sys/block/mmcblk0/bdi/read_ahead_kb
         echo 512 > /sys/block/mmcblk0rpmb/bdi/read_ahead_kb
         for dm in $dmpts; do
-            dm_dev=`echo $dm |cut -d/ -f4`
-            if [ "$dm_dev" = "" ]; then
-                is_erofs=""
-            else
-                is_erofs=`mount |grep erofs |grep "${dm_dev} "`
-            fi
-            if [ "$is_erofs" = "" ]; then
-                echo 512 > $dm
-            else
-                echo 128 > $dm
-            fi
+            echo 512 > $dm
         done
     fi
 }
@@ -1068,7 +1058,7 @@ else
 
     # Disable wsf for all targets beacause we are using efk.
     # wsf Range : 1..1000 So set to bare minimum value 1.
-    echo 40 > /proc/sys/vm/watermark_scale_factor
+    echo 1 > /proc/sys/vm/watermark_scale_factor
 
     configure_zram_parameters
 
