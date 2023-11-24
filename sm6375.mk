@@ -392,13 +392,13 @@ PRODUCT_PACKAGES += \
     init.kernel.post_boot-holi.sh \
     init.kernel.post_boot.sh \
     init.qcom.early_boot.sh \
-    init.qcom.post_boot.sh \
     init.qcom.sh
 
 PRODUCT_PACKAGES += \
     fstab.default \
     fstab.default.vendor_ramdisk \
     init.oplus.rc \
+    init.qcom.power.rc \
     init.qcom.rc \
     init.recovery.qcom.rc \
     init.target.rc \

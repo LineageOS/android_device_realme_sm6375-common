@@ -34,12 +34,6 @@ sh_binary {
 }
 
 sh_binary {
-    name: "init.qcom.post_boot.sh",
-    src: "bin/init.qcom.post_boot.sh",
-    vendor: true,
-}
-
-sh_binary {
     name: "init.qcom.sh",
     src: "bin/init.qcom.sh",
     vendor: true,
@@ -57,6 +51,13 @@ prebuilt_etc {
     src: "etc/init.oplus.rc",
     sub_dir: "init",
     device_specific: true,
+}
+
+prebuilt_etc {
+    name: "init.qcom.power.rc",
+    src: "etc/init.qcom.power.rc",
+    sub_dir: "init/hw",
+    vendor: true,
 }
 
 prebuilt_etc {
