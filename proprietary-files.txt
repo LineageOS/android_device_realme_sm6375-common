@@ -552,7 +552,6 @@ vendor/lib64/vendor.qti.imsrtpservice@3.0.so|26df2c5ff42d58456ebcd0fd7d0ba51f56a
 vendor/bin/msm_irqbalance
 
 # Kernel
-vendor/bin/init.kernel.post_boot.sh
 vendor/bin/init.qti.kernel.sh
 vendor/bin/vendor_modprobe.sh
 vendor/etc/init/hw/init.qti.kernel.rc
