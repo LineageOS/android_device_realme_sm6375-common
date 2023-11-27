@@ -1,4 +1,5 @@
 allow hal_power_default {
+  cgroup
   vendor_sysfs_devfreq
   vendor_sysfs_msm_subsys
 }:dir search;
@@ -8,6 +9,7 @@ allow hal_power_default {
   proc
   proc_sched
   vendor_sysfs_devfreq
+  proc_sysctl_schedboost
   sysfs_devices_system_cpu
   vendor_sysfs_graphics
   vendor_sysfs_kgsl
