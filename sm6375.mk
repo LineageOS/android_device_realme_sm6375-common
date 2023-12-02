@@ -398,7 +398,6 @@ PRODUCT_PACKAGES += \
     fstab.default \
     fstab.default.vendor_ramdisk \
     init.oplus.rc \
-    init.qcom.power.rc \
     init.qcom.rc \
     init.recovery.qcom.rc \
     init.target.rc \
