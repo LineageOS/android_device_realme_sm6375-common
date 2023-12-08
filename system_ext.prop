@@ -5,6 +5,7 @@ dalvik.vm.dex2oat64.enabled=true
 persist.backup.ntpServer=0.pool.ntp.org
 
 # Graphics
+debug.hwui.skia_atrace_enabled=false
 persist.demo.hdmirotationlock=false
 
 # Media
