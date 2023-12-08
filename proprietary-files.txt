@@ -1,4 +1,4 @@
-# Proprietary files - from RMX3471_11.C.20_1200_202310171010 build, unless pinned
+# Proprietary files - from RMX3471_11.C.21_1210_202311281824 build, unless pinned
 
 # ADSP
 vendor/bin/adsprpcd
@@ -592,11 +592,11 @@ vendor/etc/media_codecs_holi.xml
 vendor/etc/media_codecs_performance.xml
 vendor/etc/media_codecs_performance_blair.xml
 vendor/etc/media_codecs_performance_holi.xml
+vendor/etc/media_codecs_vendor_audio.xml
 vendor/etc/media_profiles.xml
 vendor/etc/media_profiles_V1_0.xml
 vendor/etc/media_profiles_blair.xml
 vendor/etc/media_profiles_holi.xml
-vendor/etc/media_profiles_vendor.xml
 vendor/etc/video_system_specs.json
 vendor/etc/seccomp_policy/codec2.vendor.base-arm.policy
 vendor/etc/seccomp_policy/codec2.vendor.ext-arm.policy
@@ -1197,7 +1197,7 @@ system_ext/lib64/libwfdconfigutils.so
 system_ext/lib64/libwfddisplayconfig.so
 system_ext/lib64/libwfdmminterface.so
 system_ext/lib64/libwfdmmsink.so
-system_ext/lib64/libwfdnative.so|5b47a04562fb7e806d81f39856bcad3bde319554
+system_ext/lib64/libwfdnative.so
 system_ext/lib64/libwfdrtsp.so
 system_ext/lib64/libwfdsinksm.so
 system_ext/lib64/libwfduibcinterface.so
