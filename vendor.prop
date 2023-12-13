@@ -99,10 +99,15 @@ vendor.display.disable_excl_rect=0
 vendor.display.disable_excl_rect_partial_fb=1
 vendor.display.disable_hw_recovery_dump=1
 vendor.display.disable_offline_rotator=1
+vendor.display.disable_scaler=0
 vendor.display.enable_camera_smooth=1
 vendor.display.enable_async_powermode=0
 vendor.display.enable_early_wakeup=1
 vendor.display.enable_optimize_refresh=1
+vendor.display.enable_rounded_corner=1
+vendor.display.secure_preview_buffer_format=420_sp
+vendor.display.use_smooth_motion=1
+vendor.display.vds_allow_hwc=1
 
 # DPM
 persist.vendor.dpm.idletimer.mode=default
@@ -183,14 +188,14 @@ sys.vendor.shutdown.waittime=500
 
 # USB
 sys.usb.mtp.batchcancel=1
+vendor.usb.controller=4e00000.dwc3
 vendor.usb.diag.func.name=ffs
 vendor.usb.dpl.inst.name=dpl
-vendor.usb.qdss.inst.name=qdss_sw
+vendor.usb.qdss.inst.name=qdss_mdm
 vendor.usb.rmnet.func.name=gsi
 vendor.usb.rmnet.inst.name=rmnet
 vendor.usb.rndis.func.name=gsi
 vendor.usb.use_ffs_mtp=1
-vendor.usb.use_gadget_hal=0
 
 # WiFi
 wifi.aware.interface=wifi-aware0
