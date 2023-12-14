@@ -14,8 +14,6 @@ ro.vendor.use_data_netmgrd=true
 persist.vendor.overlay.izat.optin=rro
 
 # Graphics
-debug.sf.enable_hwc_vds=1
-debug.sf.latch_unsignaled=1
 dev.pm.dyn_samplingrate=1
 
 # QC framework value-adds
