@@ -70,6 +70,9 @@ function blob_fixup() {
         product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml)
             sed -i "s/\/my_product/\/product/" "${2}"
             ;;
+        vendor/etc/media_*/video_system_specs.json)
+            sed -i -E "/max_retry_alloc_output_timeout/ s/([0-9]+)/0/" "${2}"
+            ;;
         vendor/lib64/hw/com.qti.chi.override.so)
             grep -q libcamera_metadata_shim.so "${2}" || "${PATCHELF}" --add-needed libcamera_metadata_shim.so "${2}"
             ;;
