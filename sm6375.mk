@@ -55,8 +55,7 @@ PRODUCT_PACKAGES += \
     libsndmonitor \
     libspkrprot \
     libssrec \
-    libvolumelistener \
-    sound_trigger.primary.holi:32
+    libvolumelistener
 
 AUDIO_HAL_DIR := hardware/qcom-caf/sm8350/audio
 

@@ -1,64 +1,66 @@
 # Proprietary files - from RMX3471_11.C.21_1210_202311281824 build, unless pinned
 
-# ADSP
-vendor/bin/adsprpcd
-vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc
-vendor/lib64/libadsp_default_listener.so
-vendor/lib64/libadsprpc.so
+# ADSP - from RMX3471_11.C.10_1100_202302020914
+vendor/bin/adsprpcd|e97a90171313051e2994d1a3d0985de59f586788
+vendor/bin/loadalgo|51d28ee4319514e16984839857ec41014fa86d12
+vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc|8f0eb84d3eb5fc0f683ef7b975b75044d56f513e
+vendor/lib64/libadsp_default_listener.so|d01f85011cb2a182fd6a91d0c3e159f3d9f661c1
+vendor/lib64/libadsprpc.so|c0fb4df4d595a6795827c72ca44200efb91c9c70
+vendor/lib64/libloadalgo_stub.so|db48bfdbc1bdac2c44122e6910e752983dce10c5
 
-# ADSP modules
-odm/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Encoder.so
-odm/lib/rfsa/adsp/libVDHexagonBlurless_v2_skel.so
-odm/lib/rfsa/adsp/libarc_gk_pt_hvx_skel.so
-odm/lib/rfsa/adsp/libarcsoft_dualcam_refocus_5221_skel.so
-odm/lib/rfsa/adsp/libarcsoft_dualcam_refocus_skel.so
-odm/lib/rfsa/adsp/libarcsoft_hdrplus_hvx_skel.so
-odm/lib/rfsa/adsp/libarcsoft_portraitSN_hvx_skel.so
-odm/lib/rfsa/adsp/libarcsoft_portraitsn_hvx_skel.so
-odm/lib/rfsa/adsp/libc++.so.1
-odm/lib/rfsa/adsp/libc++abi.so.1
-odm/lib/rfsa/adsp/libcalculator_skel.so
-odm/lib/rfsa/adsp/libhdr_skel.so
-odm/lib/rfsa/adsp/libhvxFaceBeautyPre_skel.so
-odm/lib/rfsa/adsp/libktvdrc.so
-odm/lib/rfsa/adsp/libktveffect.so
-odm/lib/rfsa/adsp/libktveq.so
-odm/lib/rfsa/adsp/libktvns.so
-odm/lib/rfsa/adsp/libktvpitchshift.so
-odm/lib/rfsa/adsp/libktvreverb.so
-odm/lib/rfsa/adsp/libktvvolume.so
-odm/lib/rfsa/adsp/libsnpe_dsp_domains_skel.so
-odm/lib/rfsa/adsp/libsnpe_dsp_skel.so
-odm/lib/rfsa/adsp/libsnpe_dsp_v65_domains_v2_skel.so
-odm/lib/rfsa/adsp/libsnpe_dsp_v66_domains_v2_skel.so
-odm/lib/rfsa/adsp/libsnpe_dsp_v68_domains_v3_skel.so
-odm/lib/rfsa/adsp/libvdblurless_4.6.10Y_skel.so
-odm/lib/rfsa/adsp/libvdblurless_skel.so
-odm/lib/rfsa/adsp/libvdsuperphoto_skel.so
-vendor/lib/rfsa/adsp/bm2n06.bin
-vendor/lib/rfsa/adsp/bm2n08.bin
-vendor/lib/rfsa/adsp/bm2n12.bin
-vendor/lib/rfsa/adsp/bm2n13.bin
-vendor/lib/rfsa/adsp/bm2n14.bin
-vendor/lib/rfsa/adsp/bm2n15.bin
-vendor/lib/rfsa/adsp/libadsp_jpege_skel.so
-vendor/lib/rfsa/adsp/libapps_mem_heap.so
-vendor/lib/rfsa/adsp/libbitml_nsp_skel.so
-vendor/lib/rfsa/adsp/libbitml_nsp_v2_skel.so
-vendor/lib/rfsa/adsp/libcamera_nn_skel.so
-vendor/lib/rfsa/adsp/libdspCV_skel.so
-vendor/lib/rfsa/adsp/libdsp_streamer_binning.so
-vendor/lib/rfsa/adsp/libfastcvadsp.so
-vendor/lib/rfsa/adsp/libfastcvdsp_skel.so
-vendor/lib/rfsa/adsp/libhdr_skel.so
-vendor/lib/rfsa/adsp/libhexagon_nn_skel.so
-vendor/lib/rfsa/adsp/libmctfengine_skel.so
-vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so
-vendor/lib/rfsa/adsp/libscveT2T_skel.so
-vendor/lib/rfsa/adsp/libsns_device_mode_skel.so
-vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so
-vendor/lib64/rfsa/adsp/libsns_device_mode_skel.so
-vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so
+# ADSP modules - from RMX3471_11.C.10_1100_202302020914
+odm/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Encoder.so|7e277db82033900d2664ddfa2e4a3d151546511b
+odm/lib/rfsa/adsp/libVDHexagonBlurless_v2_skel.so|177b2cf1f52506f45635a1871498fb41d1625b62
+odm/lib/rfsa/adsp/libarc_gk_pt_hvx_skel.so|d41bb03f0e641b43b660b4880b90f352261a5ef0
+odm/lib/rfsa/adsp/libarcsoft_dualcam_refocus_5221_skel.so|7eaa96c39d888b3345125ed58d7a116bfe2ec8a8
+odm/lib/rfsa/adsp/libarcsoft_dualcam_refocus_skel.so|3e96deb09c6f2b9ffc6692895ce174be9193746c
+odm/lib/rfsa/adsp/libarcsoft_hdrplus_hvx_skel.so|0d46522555fa04a0097043121fdb1306f8f00537
+odm/lib/rfsa/adsp/libarcsoft_portraitSN_hvx_skel.so|4fb91f4079bfd99f42d08c479670319020f3f3e8
+odm/lib/rfsa/adsp/libarcsoft_portraitsn_hvx_skel.so|5f0bc3571ff0c0153783a881b4e617e49c0586ab
+odm/lib/rfsa/adsp/libc++.so.1|a47243a56b23e38f4d40d9ec74496c345d4443d5
+odm/lib/rfsa/adsp/libc++abi.so.1|8dead630dc7daaabaa3a5b848b2f93f74cf69d93
+odm/lib/rfsa/adsp/libcalculator_skel.so|cba5e00eec1bb876ad2a8ffcac0b47dba91d2d67
+odm/lib/rfsa/adsp/libhdr_skel.so|2515b1e592c028f82e537c429896924e2163f78c
+odm/lib/rfsa/adsp/libhvxFaceBeautyPre_skel.so|cbcbb8ff095d697e0274ab5f274cebf0abc5b646
+odm/lib/rfsa/adsp/libktvdrc.so|c53a4cfcb8d149284c99d37d1e7c882c945a65ec
+odm/lib/rfsa/adsp/libktveffect.so|0f955ce0db7d4ecd65487f39c2625c40e0b46b15
+odm/lib/rfsa/adsp/libktveq.so|a75cb50e3c218564df33c1396b622031832b5fbd
+odm/lib/rfsa/adsp/libktvns.so|a114855fbb1214702f7c1a8283c4c4f5bad18104
+odm/lib/rfsa/adsp/libktvpitchshift.so|d1667e1c819055d4b526a481f69249aae3e337dd
+odm/lib/rfsa/adsp/libktvreverb.so|7ee33850fd8384ae13b9d8111ee50e642541cca4
+odm/lib/rfsa/adsp/libktvvolume.so|c6284767ae7c61bb8a22ae8b2562fc23b79c59f9
+odm/lib/rfsa/adsp/libsnpe_dsp_domains_skel.so|a1810f1044134fb36037bb4db37a9fa89f8b1405
+odm/lib/rfsa/adsp/libsnpe_dsp_skel.so|be621ce99ba3ea03358e4d73edb39782cda0c70b
+odm/lib/rfsa/adsp/libsnpe_dsp_v65_domains_v2_skel.so|b47a6e528f9fe4a401f32e5f7c770cd8976ac5ec
+odm/lib/rfsa/adsp/libsnpe_dsp_v66_domains_v2_skel.so|77cdcb403898e909c009639d691d787d673f6976
+odm/lib/rfsa/adsp/libsnpe_dsp_v68_domains_v3_skel.so|8df65d24457e5cdff912c3c5e320560b41c397dd
+odm/lib/rfsa/adsp/libvdblurless_4.6.10J_skel.so|56a6b03a669706a300bc8ccaafb36bc271d28d6d
+odm/lib/rfsa/adsp/libvdblurless_skel.so|3a26e1cb3895811981dfe9ef47f97557f542ad16
+odm/lib/rfsa/adsp/libvdsuperphoto_skel.so|ebf008bcc7085939f62a9190730cacf0687e2b92
+vendor/lib/rfsa/adsp/bm2n06.bin|1575b125138e163894800532fbdf145f3a814d9c
+vendor/lib/rfsa/adsp/bm2n08.bin|e906da095f37cf090f63003c14cdd610b79bb9c8
+vendor/lib/rfsa/adsp/bm2n12.bin|f7c4b4c7053aeb080e91f5d38c80357a7c951247
+vendor/lib/rfsa/adsp/bm2n13.bin|f36d57de52a30e6a86c11145c597d7e8e0ecc48e
+vendor/lib/rfsa/adsp/bm2n14.bin|7adbe69e74e54c324d1a8faa3de2ed1d907ef895
+vendor/lib/rfsa/adsp/bm2n15.bin|45cc6f1c80da1a0a0e1dbf84b782dda06d1c8145
+vendor/lib/rfsa/adsp/libadsp_jpege_skel.so|32c2b255f8b15848cd40739b9c455e86a1adb1e8
+vendor/lib/rfsa/adsp/libapps_mem_heap.so|738014e904331e99749f36c8f6c0c43b8c246fe6
+vendor/lib/rfsa/adsp/libbitml_nsp_skel.so|dc07e450366c7723a7a6048ad0113dbe7893d1b4
+vendor/lib/rfsa/adsp/libbitml_nsp_v2_skel.so|9940ad2ccf12b1cc9144f386e6b6f4c53d054e02
+vendor/lib/rfsa/adsp/libcamera_nn_skel.so|9be728826d031e23181aa3003b14f76519f1b22e
+vendor/lib/rfsa/adsp/libdspCV_skel.so|6380e1b81a4b27e57dfecf11ac6dff7ae2291627
+vendor/lib/rfsa/adsp/libdsp_streamer_binning.so|00eb6acc7c864371b932f95ff98e98351c6508d8
+vendor/lib/rfsa/adsp/libfastcvadsp.so|99a6b8318daad58cb9dc5bd1020cd08f16ebb121
+vendor/lib/rfsa/adsp/libfastcvdsp_skel.so|116257a47f17dedef0a7249a61bec11c4f07c0b5
+vendor/lib/rfsa/adsp/libhdr_skel.so|bc6e7d4d621fed94ea9c68866fda372fcc37dece
+vendor/lib/rfsa/adsp/libhexagon_nn_skel.so|79188b620f3fc48421267990d6dd20d738d6ddd4
+vendor/lib/rfsa/adsp/libmctfengine_skel.so|144872c96499b7cb33f6d3528b1b493030507994
+vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so|d95fa1d4e6a7f60a43465256963636cb14d8a267
+vendor/lib/rfsa/adsp/libscveT2T_skel.so|200e8d2e239e559d54aad8cdd2d5eeff8d73f3d2
+vendor/lib/rfsa/adsp/libsns_device_mode_skel.so|733a5b8861bb6eb1285bb8982992531c94800997
+vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so|c30bb30eecf968e02f72c055d3cc13a7f769644f
+vendor/lib64/rfsa/adsp/libsns_device_mode_skel.so|733a5b8861bb6eb1285bb8982992531c94800997
+vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so|c30bb30eecf968e02f72c055d3cc13a7f769644f
 
 # Alarm
 product/app/PowerOffAlarm/PowerOffAlarm.apk
@@ -76,30 +78,30 @@ vendor/lib64/vendor.qti.hardware.alarm@1.0.so
 # ANT+
 vendor/lib64/hw/com.dsi.ant@1.0-impl.so
 
-# Audio FX
-vendor/lib/soundfx/libasphere.so
-vendor/lib/soundfx/libqcbassboost.so
-vendor/lib/soundfx/libqcreverb.so
-vendor/lib/soundfx/libqcvirt.so
-vendor/lib/soundfx/libshoebox.so
+# Audio FX - from RMX3471_11.C.10_1100_202302020914
+vendor/lib/soundfx/libasphere.so|a742e8196f321571132113e0052b9c947cb9d37a
+vendor/lib/soundfx/libqcbassboost.so|8a7cec6fa3fb6ec4b82d4909c4d64fff703cfedd
+vendor/lib/soundfx/libqcreverb.so|9af70b3c1b7f22636db82c5cef65f28b1288e7bb
+vendor/lib/soundfx/libqcvirt.so|b470ec820a77090a0da241662c467b5087b45689
+vendor/lib/soundfx/libshoebox.so|220745509dcc7874bc253d4f892d7ee0cd52d7ca
 
-# Audio libraries
-odm/lib/libaudioEngineerTest.so
-odm/lib/liblvimfs.so
-odm/lib/liblvimfs_wrapper.so
-vendor/lib/hw/audio.primary.holi.so
-vendor/lib/liba2dpoffload.so
-vendor/lib/libacdb-fts.so
-vendor/lib/libacdbloader.so
-vendor/lib/libacdbrtac.so
-vendor/lib/libadiertac.so
-vendor/lib/libadm.so
-vendor/lib/libaudcal.so
-vendor/lib/libaudio_log_utils.so
-vendor/lib/libaudioparsers.so
-vendor/lib/libhdmipassthru.so
-vendor/lib/libqtigef.so
-vendor/lib/libssrec.so
+# Audio libraries - from RMX3471_11.C.10_1100_202302020914
+odm/lib/libaudioEngineerTest.so|e2984ef9b520f7c81786d29c7e5c953b512804ac
+odm/lib/liblvimfs.so|51955be664d0d88044d212c9f1f96924eeb816f7
+odm/lib/liblvimfs_wrapper.so|75b025338b0c966a9cdee22072304240bea9580c
+vendor/lib/hw/audio.primary.holi.so|6546da5e435d74d172af97777588bf0a9f66ce27
+vendor/lib/liba2dpoffload.so|5d801464c73081d1a3019bdc46eaddce1a1c2671
+vendor/lib/libacdb-fts.so|a3ceca16ddbc4861423efcc27163157726c66ebd
+vendor/lib/libacdbloader.so|7147fa6b1b38a9110937198be2b57396c0faa84a
+vendor/lib/libacdbrtac.so|22eec7405b019bb305a523b71b7178bd7ca758e5
+vendor/lib/libadiertac.so|2b994d145a4c2c8e15bdac4c99f531d1ad77bd8b
+vendor/lib/libadm.so|ceb6b3d0ba0d41bb5d923fc4ff4699fdf9b0003f
+vendor/lib/libaudcal.so|f87087221c23c6e436cbddbba16d4f518e6751b8
+vendor/lib/libaudio_log_utils.so|37ca8e156d7f7e068db96211111a492d205f6db1
+vendor/lib/libaudioparsers.so|62449b99fcd1dafaa0575cd9cf7bf73596769eb5
+vendor/lib/libhdmipassthru.so|0f2278a80b58d6c4014a156c03629b3cb7b600ea
+vendor/lib/libqtigef.so|91357cc60080867450897bbff69b8fa82fc8d15e
+vendor/lib/libssrec.so|74048f1c21ea7e96ad7f44cfe2f58ff04ce94ed2
 
 # Bluetooth - from OnePlus 9 Pro (LE2125_13.1.0.591(EX01))
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|ce24e31127b1c5ecd089bb84f96836f9a8f2f2a4
@@ -477,11 +479,10 @@ vendor/lib64/libllvm-qcom.so
 vendor/lib/hw/vulkan.adreno.so
 vendor/lib64/hw/vulkan.adreno.so
 
-# Hotword Enrollment
-my_product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml:product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml|74f42fc8c262cad9759e9135a80f909a557699f9
-my_product/framework/com.android.hotwordenrollment.common.util.jar:product/framework/com.android.hotwordenrollment.common.util.jar
-my_product/priv-app/HotwordEnrollmentOKGoogleHEXAGON.apk:product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk
-my_product/priv-app/HotwordEnrollmentXGoogleHEXAGON.apk:product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk
+# Hotword Enrollment - from RMX3471_11.C.10_1100_202302020914
+my_product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml:product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml|52b6a326e59e543daac9b8d6e960654095c0fb6b
+my_product/framework/com.android.hotwordenrollment.common.util.jar:product/framework/com.android.hotwordenrollment.common.util.jar|9ad8db8e39c477fcc298f109ab39022c1970167e
+my_product/priv-app/HotwordEnrollmentOKGoogleHEXAGON.apk:product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk|a582c1164c39134419e0773532f37b2415945291
 
 # IMS - from renoir - 22.5.11
 system_ext/app/ImsRcsService/ImsRcsService.apk|d03d3142f3518e755d02ace26b17170218ed8b4b
@@ -564,16 +565,17 @@ vendor/lib64/libkeymasterprovision.so
 vendor/lib64/libkeymasterutils.so
 vendor/lib64/libqtikeymaster4.so
 
-# Listen
-vendor/lib/libcapiv2svacnn.so
-vendor/lib/libcapiv2svarnn.so
-vendor/lib/libcapiv2vop.so
-vendor/lib/libgcs-calwrapper.so
-vendor/lib/libgcs-ipc.so
-vendor/lib/libgcs-osal.so
-vendor/lib/libgcs.so
-vendor/lib/liblistensoundmodel2.so
-vendor/lib/libmulawdec.so
+# Listen - from RMX3471_11.C.10_1100_202302020914
+vendor/lib/hw/sound_trigger.primary.holi.so|c1d8ac2f0827fbd3de572e7a474b31bd673ec2e0
+vendor/lib/libcapiv2svacnn.so|a2219c156bb4978ae8444120417ca1f34e35504a
+vendor/lib/libcapiv2svarnn.so|165509096605c4afd585762a2f6e467f55954a23
+vendor/lib/libcapiv2vop.so|19979321e66a3b01d5d51ab6a517530c8c4c05af
+vendor/lib/libgcs-calwrapper.so|af54526b79ad78246a2e00bb48340f61bc18461c
+vendor/lib/libgcs-ipc.so|58cffb360e22c6139fc8fa289fb9bfbf105d768e
+vendor/lib/libgcs-osal.so|9ac399fbee4e73561c0a3f397fe6ffdc9c42892c
+vendor/lib/libgcs.so|1a2cab28bc6184263eee7e7c022ed9f43ddd6887
+vendor/lib/liblistensoundmodel2.so|25b62bedc02e5584706c410b76e4f1874dd4ea46
+vendor/lib/libmulawdec.so|f72724da37b96a8cdce1a9e62d935c593d222096
 
 # Media
 system_ext/lib/libmmosal.so
