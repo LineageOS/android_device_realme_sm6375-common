@@ -150,7 +150,7 @@ vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc
 vendor/etc/charger_fstab.qti
 
 # CNE - from OnePlus 9RT 5G (MT2111_14.0.0.600(EX01))
-vendor/app/CneApp/CneApp.apk|4d0e0751c57469e7bb384e5a6f3567418ee917c8
+vendor/app/CneApp/CneApp.apk;REQUIRED=CneApp.libvndfwk_detect_jni.qti_symlink|4d0e0751c57469e7bb384e5a6f3567418ee917c8
 vendor/bin/cnd|4e6ae2528afcff42fb3d295ad69d5bb671b53fed
 vendor/bin/mutualex|ff0074916f137999171a01f21650494ca3e09fde
 vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml|578f3f8f56059bfdbef926bcc68d01c15e06951f
