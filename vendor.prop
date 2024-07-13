@@ -84,6 +84,7 @@ persist.vendor.qcom.bluetooth.aptxadaptiver2_1_support=true
 
 # Camera
 camera.disable_zsl_mode=true
+vendor.camera.aux.packageexcludelist=org.telegram.messenger,org.thunderdog.challegram,us.zoom.videomeetings
 
 # Chipset
 ro.soc.manufacturer=Qualcomm
