@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "13ed86e7_97945314",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-08-15T17:29:38Z",
+      "side": 1,
+      "message": "You don\u0027t need this anymore. Just build wvkiller from hw/oplus.",
+      "revId": "ce4e473d22249c033d7c493bd2170a7dc31212af",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
