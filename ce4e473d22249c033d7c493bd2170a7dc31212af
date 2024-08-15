@@ -16,6 +16,24 @@
       "message": "You don\u0027t need this anymore. Just build wvkiller from hw/oplus.",
       "revId": "ce4e473d22249c033d7c493bd2170a7dc31212af",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6959834e_f26f442d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 26672
+      },
+      "writtenOn": "2024-08-15T19:46:26Z",
+      "side": 1,
+      "message": "5 digit L1 is not present after bootloader unlock. so luk suggests to remove the lib itself",
+      "parentUuid": "13ed86e7_97945314",
+      "revId": "ce4e473d22249c033d7c493bd2170a7dc31212af",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
