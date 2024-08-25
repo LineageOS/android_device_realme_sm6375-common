@@ -76,6 +76,10 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             sed -i "s/\/my_product/\/product/" "${2}"
             ;;
+        system_ext/lib/libwfdservice.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF}" --replace-needed "android.media.audio.common.types-V2-cpp.so" "android.media.audio.common.types-V3-cpp.so" "${2}"
+            ;;
         vendor/etc/media_*/video_system_specs.json)
             [ "$2" = "" ] && return 0
             sed -i -E "/max_retry_alloc_output_timeout/ s/([0-9]+)/0/" "${2}"
