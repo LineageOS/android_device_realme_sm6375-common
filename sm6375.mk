@@ -358,6 +358,8 @@ PRODUCT_PACKAGES += \
     librmnetctl \
     libsysutils.vendor
 
+$(call inherit-product, hardware/oplus/oplus-fwk/oplus-fwk.mk)
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.class_main.sh \
