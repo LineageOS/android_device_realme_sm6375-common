@@ -41,6 +41,14 @@
             <instance>oplus_app_slot2</instance>
         </interface>
     </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.oplus.hardware.appradioaidl</name>
+        <interface>
+            <name>IAppRadioStable</name>
+            <instance>OplusAppRadio0</instance>
+            <instance>OplusAppRadio1</instance>
+        </interface>
+    </hal>
     <hal format="hidl" optional="true">
         <name>vendor.oplus.hardware.biometrics.fingerprint</name>
         <version>2.1</version>
@@ -65,6 +73,14 @@
             <instance>oplusimsradio1</instance>
         </interface>
     </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.oplus.hardware.ims</name>
+        <interface>
+            <name>IImsStable</name>
+            <instance>OplusImsRadio0</instance>
+            <instance>OplusImsRadio1</instance>
+        </interface>
+    </hal>
     <hal format="hidl" optional="true">
         <name>vendor.oplus.hardware.radio</name>
         <version>1.0-1</version>
@@ -72,6 +88,15 @@
             <name>IOplusRadio</name>
             <instance>oplus_slot1</instance>
             <instance>oplus_slot2</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.oplus.hardware.radio</name>
+        <version>1-2</version>
+        <interface>
+            <name>IRadioStable</name>
+            <instance>OplusRadio0</instance>
+            <instance>OplusRadio1</instance>
         </interface>
     </hal>
 </compatibility-matrix>
