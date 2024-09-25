@@ -147,15 +147,18 @@ persist.sys.fuse.passthrough.enable=true
 vendor.gatekeeper.disable_spu=true
 
 # Graphics
+debug.sf.use_phase_offsets_as_durations=1
+debug.sf.late.app.duration=13666666
+debug.sf.early.app.duration=13666666
+debug.sf.earlyGl.app.duration=13666666
+debug.sf.early.sf.duration=15666666
+debug.sf.earlyGl.sf.duration=15666666
+debug.sf.late.sf.duration=15666666
 debug.sf.auto_latch_unsignaled=0
 debug.sf.disable_client_composition_cache=1
 debug.sf.enable_advanced_sf_phase_offset=1
 debug.sf.enable_gl_backpressure=false
 debug.sf.enable_hwc_vds=0
-debug.sf.high_fps_early_gl_phase_offset_ns=-2000000
-debug.sf.high_fps_early_phase_offset_ns=-4000000
-debug.sf.high_fps_late_app_phase_offset_ns=1000000
-debug.sf.high_fps_late_sf_phase_offset_ns=-2000000
 debug.sf.hwc.min.duration=17000000
 debug.sf.layer_caching_active_layer_timeout_ms=1000
 debug.sf.predict_hwc_composition_strategy=0
