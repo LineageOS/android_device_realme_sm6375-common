@@ -105,78 +105,19 @@ function configure_read_ahead_kb_values() {
 	done
 }
 
-#/*Add swappiness tunning parameters*/
-function oplus_configure_tunning_swappiness() {
-	MemTotalStr=`cat /proc/meminfo | grep MemTotal`
-	MemTotal=${MemTotalStr:16:8}
-	prjname=`getprop ro.boot.prjname`
-
-	if [ $MemTotal -le 6291456 ]; then
-		echo 0 > /proc/sys/vm/swappiness_threshold1_size
-		echo 0 > /proc/sys/vm/swappiness_threshold1_size
-		echo 0 > /proc/sys/vm/vm_swappiness_threshold2
-		echo 0 > /proc/sys/vm/swappiness_threshold2_size
-	elif [ $MemTotal -le 8388608 ]; then
-		echo 70 > /proc/sys/vm/vm_swappiness_threshold1
-		echo 2000 > /proc/sys/vm/swappiness_threshold1_size
-		echo 90 > /proc/sys/vm/vm_swappiness_threshold2
-		echo 1500 > /proc/sys/vm/swappiness_threshold2_size
-	else
-		echo 100 > /proc/sys/vm/vm_swappiness_threshold1
-		echo 4096 > /proc/sys/vm/swappiness_threshold1_size
-		echo 120 > /proc/sys/vm/vm_swappiness_threshold2
-		echo 2048 > /proc/sys/vm/swappiness_threshold2_size
-	fi
-
-	if [ -n "$prjname" ]; then
-		case $prjname in
-			"21141"|"21341")
-				echo 60 > /proc/sys/vm/vm_swappiness_threshold1
-				echo 2000 > /proc/sys/vm/swappiness_threshold1_size
-				echo 70 > /proc/sys/vm/vm_swappiness_threshold2
-				echo 1500 > /proc/sys/vm/swappiness_threshold2_size
-				# /proc/sys/vm/swappiness is not used in these projects,
-				# /sys/module/zram_opt/parameters/vm_swappiness is used instead.
-                # modify the swappiness vm_swappiness to 160
-				echo 160 > /proc/sys/vm/swappiness
-				echo 160 > /sys/module/zram_opt/parameters/vm_swappiness
-				echo 60 > /sys/module/zram_opt/parameters/direct_vm_swappiness
-				# disable watermark_boost_factor
-				echo 0 > /proc/sys/vm/watermark_boost_factor
-				# only for 6GB/8GB devices
-                # modify the low-high watermark gap to 16M
-				echo 22 > /proc/sys/vm/watermark_scale_factor
-				;;
-			*)
-				echo "$prjname:no special config<oplus vm_swappiness>"
-				;;
-		esac
-	fi
-}
-
 function configure_memory_parameters() {
 	# Set Memory parameters.
-        MemTotalStr=`cat /proc/meminfo | grep MemTotal`
-        MemTotal=${MemTotalStr:16:8}
 
 	# Set swappiness to 100 for all targets
 	echo 100 > /proc/sys/vm/swappiness
 
 	# Disable wsf for all targets beacause we are using efk.
 	# wsf Range : 1..1000 So set to bare minimum value 1.
-	if [ $MemTotal -le 8388608 ]; then
-		echo 25 > /proc/sys/vm/watermark_scale_factor
-	else
-		echo 16 > /proc/sys/vm/watermark_scale_factor
-	fi
-	oplus_configure_tunning_swappiness
-
-	if [ ! -f /sys/block/zram0/hybridswap_enable ]; then
-	    configure_zram_parameters
-	fi
+	echo 1 > /proc/sys/vm/watermark_scale_factor
+	configure_zram_parameters
 	configure_read_ahead_kb_values
 
-	#Spawn 2 kswapd threads which can help in fast reclaiming of pages
+	#Spawn 1 kswapd threads which can help in fast reclaiming of pages
 	echo 1 > /proc/sys/vm/kswapd_threads
 }
 
@@ -219,17 +160,6 @@ echo "schedutil" > /sys/devices/system/cpu/cpufreq/policy0/scaling_governor
 
 # configure governor settings for gold cluster
 echo "schedutil" > /sys/devices/system/cpu/cpufreq/policy6/scaling_governor
-
-# Colocation V3 settings
-echo 680000 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/rtg_boost_freq
-echo 0 > /sys/devices/system/cpu/cpufreq/policy6/schedutil/rtg_boost_freq
-echo 51 > /proc/sys/kernel/sched_min_task_util_for_boost
-echo 35 > /proc/sys/kernel/sched_min_task_util_for_colocation
-
-# sched_load_boost as -6 is equivalent to target load as 85. It is per cpu tunable.
-echo -6 > /sys/devices/system/cpu/cpu6/sched_load_boost
-echo -6 > /sys/devices/system/cpu/cpu7/sched_load_boost
-echo 85 > /sys/devices/system/cpu/cpufreq/policy6/schedutil/hispeed_load
 
 # Enable bus-dcvs
 for device in /sys/devices/platform/soc
