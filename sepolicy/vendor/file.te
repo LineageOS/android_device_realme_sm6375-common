@@ -1,6 +1,2 @@
 # Camera
 type vendor_proc_flash, fs_type, proc_type;
-
-# Power
-type proc_sysctl_schedboost, proc_type, fs_type;
-type vendor_sysfs_msm_subsys, fs_type, sysfs_type;

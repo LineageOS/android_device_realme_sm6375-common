@@ -1,18 +1,2 @@
 # Camera
 genfscon proc /qcom_flash     u:object_r:vendor_proc_flash:s0
-
-# Power
-genfscon proc /sys/kernel/sched_boost                 u:object_r:proc_sysctl_schedboost:s0
-
-genfscon sysfs /devices/platform/soc/5e00000.qcom,mdss_mdp/idle_encoder_mask                        u:object_r:vendor_sysfs_graphics:s0
-genfscon sysfs /devices/platform/soc/5e00000.qcom,mdss_mdp/idle_state                               u:object_r:vendor_sysfs_graphics:s0
-genfscon sysfs /devices/platform/soc/5e00000.qcom,mdss_mdp/idle_timeout_ms                          u:object_r:vendor_sysfs_graphics:s0
-genfscon sysfs /devices/platform/soc/5e00000.qcom,mdss_mdp/drm/card0/sde-crtc-0/early_wakeup        u:object_r:vendor_sysfs_msm_subsys:s0
-genfscon sysfs /devices/platform/soc/soc:qcom,cpu-cpu-ddr-bw                                        u:object_r:vendor_sysfs_msm_subsys:s0
-genfscon sysfs /devices/platform/soc/soc:qcom,cpu0-cpu-ddr-lat                                      u:object_r:vendor_sysfs_msm_subsys:s0
-genfscon sysfs /devices/platform/soc/soc:qcom,cpu6-cpu-ddr-lat                                      u:object_r:vendor_sysfs_msm_subsys:s0
-genfscon sysfs /devices/platform/soc/fd90100.qcom,cpu0-cpu-l3-lat                                   u:object_r:vendor_sysfs_msm_subsys:s0
-genfscon sysfs /devices/platform/soc/fd90100.qcom,cpu6-cpu-l3-lat                                   u:object_r:vendor_sysfs_msm_subsys:s0
-genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display                                           u:object_r:vendor_sysfs_graphics:s0
-genfscon sysfs /devices/platform/soc/soc:qcom,gpubw                                                 u:object_r:vendor_sysfs_msm_subsys:s0
-genfscon sysfs /devices/platform/soc/soc:qcom,gpubw/devfreq                                         u:object_r:vendor_sysfs_msm_subsys:s0
