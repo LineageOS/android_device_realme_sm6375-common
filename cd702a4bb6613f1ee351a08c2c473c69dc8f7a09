@@ -1,4 +1,22 @@
 {
-  "comments": [],
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e062dc23_fbfc2214",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34469
+      },
+      "writtenOn": "2024-12-09T18:23:34Z",
+      "side": 1,
+      "message": "السلام عليكم",
+      "revId": "cd702a4bb6613f1ee351a08c2c473c69dc8f7a09",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ],
   "submitRequirementResults": []
 }
