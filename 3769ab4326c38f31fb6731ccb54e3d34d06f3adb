@@ -16,6 +16,24 @@
       "message": "FYI \u003csm8450 does not need QCC to have working GPS xtra data",
       "revId": "3769ab4326c38f31fb6731ccb54e3d34d06f3adb",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b05e8cac_5463a5a4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 26672
+      },
+      "writtenOn": "2024-12-20T17:53:35Z",
+      "side": 1,
+      "message": "https://review.lineageos.org/c/LineageOS/android_device_realme_sm6375-common/+/407684",
+      "parentUuid": "96190e48_9debf9ef",
+      "revId": "3769ab4326c38f31fb6731ccb54e3d34d06f3adb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": []
