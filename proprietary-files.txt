@@ -1,4 +1,4 @@
-# Proprietary files - from RMX3471_14.0.0.900(EX01) build, unless pinned
+# Proprietary files - from RMX3471_14.0.0.1100(EX01) build, unless pinned
 
 # Current blobs with ELF checks disabled:
 # libOmxVideoDSMode depends on libOmxCore, which is a gnu makefile target
