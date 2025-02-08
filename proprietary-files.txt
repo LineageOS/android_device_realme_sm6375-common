@@ -624,6 +624,13 @@ vendor/lib/libqcodec2_utils.so
 vendor/lib/libqcodec2_v4l2codec.so
 vendor/lib64/libmmosal.so;MODULE_SUFFIX=-vendor
 
+# OPLUS Project
+odm/bin/hw/vendor.oplus.hardware.stability.oplus_project-V1-service
+odm/etc/init/vendor.oplus.hardware.stability.oplus_project-V1-service.rc
+odm/etc/vintf/manifest/manifest_oplus_stability_project_aidl.xml
+odm/lib64/vendor.oplus.hardware.stability.oplus_project@1.0.so
+odm/lib64/vendor.oplus.hardware.stability.oplus_project-V1-ndk_platform.so
+
 # Peripheral manager
 vendor/bin/pm-proxy
 vendor/bin/pm-service
