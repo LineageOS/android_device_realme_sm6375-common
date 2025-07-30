@@ -194,6 +194,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.media.audio.common.types-V1-cpp
 
+$(call soong_config_set,stagefright,target_disable_thumbnail_block_model,true)
+
 # Overlays
 $(call inherit-product, hardware/oplus/overlay/qssi/qssi.mk)
 
