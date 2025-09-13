@@ -625,7 +625,6 @@ vendor/lib64/libperipheral_client.so
 # Perf (Oplus)
 odm/lib64/liboplus-uah-client.so
 odm/lib64/vendor.oplus.hardware.performance-V1-ndk_platform.so
-odm/lib64/vendor.oplus.hardware.urcc-V1-ndk_platform.so
 
 # QCC
 vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so
