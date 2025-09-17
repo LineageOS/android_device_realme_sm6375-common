@@ -158,7 +158,6 @@ debug.sf.enable_gl_backpressure=false
 debug.sf.enable_hwc_vds=0
 debug.sf.late.app.duration=13666666
 debug.sf.late.sf.duration=10500000
-debug.sf.layer_caching_active_layer_timeout_ms=1000
 debug.sf.predict_hwc_composition_strategy=0
 debug.sf.scroll_boost_refreshrate=120
 debug.sf.touch_boost_refreshrate=90
