@@ -120,9 +120,9 @@
             <Limit name="measured-frame-rate-1920x1080" range="220-220" />
         </MediaCodec>
         <MediaCodec name="c2.android.avc.decoder" type="video/avc" update="true">
-            <Limit name="measured-frame-rate-320x240" range="101-223" />
-            <Limit name="measured-frame-rate-720x480" range="42-59" />
-            <Limit name="measured-frame-rate-1280x720" range="17-37" />
+            <Limit name="measured-frame-rate-320x240" range="166-366" />
+            <Limit name="measured-frame-rate-720x480" range="95-209" />
+            <Limit name="measured-frame-rate-1280x720" range="33-73" />
         <!-- #ifndef OPLUS_BUG_COMPATIBILITY -->
         <!-- Xiang.Yang@MM.MediaServer.Record, 2022/7/26, -->
         <!-- Modify for CtsMediaTestCases  -->
@@ -130,7 +130,7 @@
             <Limit name="measured-frame-rate-1920x1080" range="8-12" />
         -->
         <!-- #else  //OPLUS_BUG_COMPATIBILITY -->
-            <Limit name="measured-frame-rate-1920x1080" range="11-23" />
+            <Limit name="measured-frame-rate-1920x1080" range="16-36" />
         <!-- #endif //OPLUS_BUG_COMPATIBILITY -->
         </MediaCodec>
         <MediaCodec name="c2.android.hevc.decoder" type="video/hevc" update="true">
@@ -142,8 +142,8 @@
             <Limit name="measured-frame-rate-640x360" range="57-114" />
         -->
         <!-- #else  //OPLUS_BUG_COMPATIBILITY -->
-            <Limit name="measured-frame-rate-352x288" range="102-232" />
-            <Limit name="measured-frame-rate-640x360" range="57-154" />
+            <Limit name="measured-frame-rate-352x288" range="183-403" />
+            <Limit name="measured-frame-rate-640x360" range="109-240" />
         <!-- #endif //OPLUS_BUG_COMPATIBILITY -->
         <!-- #ifndef OPLUS_BUG_COMPATIBILITY -->
         <!-- Xiang.Yang@MM.MediaServer.Record, 2022/1/7, -->
@@ -153,7 +153,7 @@
             <Limit name="measured-frame-rate-1280x720" range="35-51" />
         -->
         <!-- #else  //OPLUS_BUG_COMPATIBILITY -->
-            <Limit name="measured-frame-rate-720x480" range="69-141" />
+            <Limit name="measured-frame-rate-720x480" range="101-224" />
             <Limit name="measured-frame-rate-1280x720" range="35-71" />
         <!-- #endif //OPLUS_BUG_COMPATIBILITY -->
             <Limit name="measured-frame-rate-1920x1080" range="20-29" />
