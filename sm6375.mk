@@ -295,10 +295,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml
 
-# QMI
-PRODUCT_PACKAGES += \
-    libvndfwk_detect_jni.qti.vendor # Needed by CNE app
-
 # QNS
 PRODUCT_PACKAGES += \
     libstdc++_vendor
