@@ -80,6 +80,10 @@ function configure_memory_parameters() {
 	# Disable wsf for all targets beacause we are using efk.
 	# wsf Range : 1..1000 So set to bare minimum value 1.
 	echo 1 > /proc/sys/vm/watermark_scale_factor
+	# Disable the feature of watermark boost for 8G and below device
+	if [ $MemTotal -le 8388608 ]; then
+		echo 0 > /proc/sys/vm/watermark_boost_factor
+	fi
 	configure_zram_parameters
 
 	#Spawn 1 kswapd threads which can help in fast reclaiming of pages
