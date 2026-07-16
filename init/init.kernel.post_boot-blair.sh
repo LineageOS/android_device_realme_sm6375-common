@@ -88,6 +88,9 @@ function configure_memory_parameters() {
 
 	#Spawn 1 kswapd threads which can help in fast reclaiming of pages
 	echo 1 > /proc/sys/vm/kswapd_threads
+
+	# Reserve extra free memory headroom to reduce direct-reclaim stalls
+	echo 131072 > /proc/sys/vm/min_free_kbytes
 }
 
 # Core control parameters for silver
