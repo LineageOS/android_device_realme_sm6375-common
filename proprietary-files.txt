@@ -352,6 +352,18 @@ vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy
 vendor/lib/vendor.qti.hardware.dsp@1.0.so
 vendor/lib64/vendor.qti.hardware.dsp@1.0.so
 
+# Face unlock
+odm/bin/hw/vendor.oplus.hardware.biometrics.face@1.0-service
+odm/etc/init/vendor.oplus.hardware.biometrics.face@1.0-service.rc
+odm/etc/vintf/manifest/manifest_oplus_face.xml
+odm/lib64/android.hardware.biometrics.common-V1-ndk_platform.so;DUMMY_SHARED_LIB
+odm/lib64/android.hardware.biometrics.face-V1-ndk_platform.so
+odm/lib64/libolc_vnd.so
+odm/lib64/libosenseaidlhalclient.so;DUMMY_SHARED_LIB
+odm/lib64/libstfaceunlockocl.so;DUMMY_SHARED_LIB
+odm/init.oplus.face.rc
+vendor/lib64/libcamera2ndk_vendor.so
+
 # FM
 vendor/lib64/vendor.qti.hardware.fm@1.0.so
 

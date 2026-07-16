@@ -45,8 +45,18 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 blob_fixups: blob_fixups_user_type = {
+    'odm/bin/hw/vendor.oplus.hardware.biometrics.face@1.0-service': blob_fixup()
+        .add_needed('libbase_shim.so'),
+    'odm/etc/vintf/manifest/manifest_oplus_face.xml': blob_fixup()
+        .regex_replace(
+            '<name>android.hardware.biometrics.face</name>',
+            '<name>android.hardware.biometrics.face</name>\n        <version>2</version>'
+        ),
     'odm/lib/liblvimfs_wrapper.so': blob_fixup()
         .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
+    'odm/lib64/android.hardware.biometrics.face-V1-ndk_platform.so': blob_fixup()
+        .replace_needed('android.hardware.common-V2-ndk_platform.so', 'android.hardware.common-V2-ndk.so')
+        .replace_needed('android.hardware.keymaster-V3-ndk_platform.so', 'android.hardware.keymaster-V3-ndk.so'),
     ('odm/lib64/mediadrm/libwvdrmengine.so', 'odm/lib64/libwvhidl.so'): blob_fixup()
         .add_needed('libcrypto_shim.so'),
     'product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml': blob_fixup()
