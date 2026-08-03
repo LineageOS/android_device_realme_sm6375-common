@@ -125,12 +125,6 @@ on boot
     exec_background u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules/ qca_cld3_wlan qca_cld3_qca6390
     exec_background u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules/5.4-gki qca_cld3_wlan qca_cld3_qca6390
 
-on property:vendor.display.lcd_density=560
-   setprop dalvik.vm.heapgrowthlimit 256m
-
-on property:vendor.display.lcd_density=640
-   setprop dalvik.vm.heapgrowthlimit 512m
-
 on boot && property:persist.vendor.usb.controller.default=*
     setprop vendor.usb.controller ${persist.vendor.usb.controller.default}
 
@@ -161,27 +155,9 @@ service vendor.per_proxy /vendor/bin/pm-proxy
     group system
     disabled
 
-#service vendor.mdm_helper /vendor/bin/mdm_helper
-#    class core
-#    group system wakelock
-#    disabled
-
-service vendor.mdm_launcher /vendor/bin/sh /vendor/bin/init.mdm.sh
-    class core
-    oneshot
-
 on property:init.svc.vendor.per_mgr=running
     start vendor.per_proxy
 
 on property:sys.shutdown.requested=*
     stop vendor.per_proxy
-
-on property:vold.decrypt=trigger_restart_framework
-   start vendor.cnss_diag
-
-service vendor.cnss_diag /system/vendor/bin/cnss_diag -q -f -t HELIUM
-   class main
-   user system
-   group system wifi inet sdcard_rw media_rw diag
-   oneshot
 
