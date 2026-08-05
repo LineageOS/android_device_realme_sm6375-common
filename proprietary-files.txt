@@ -482,21 +482,21 @@ vendor/lib64/libkernelmanager.so
 vendor/lib64/libllvm-glnext.so
 vendor/lib64/libllvm-qcom.so
 
-# Graphics (Adreno firmware)
-vendor/firmware/a615_zap.b00
-vendor/firmware/a615_zap.b01
-vendor/firmware/a615_zap.b02
-vendor/firmware/a615_zap.elf
-vendor/firmware/a615_zap.mdt
-vendor/firmware/a619_gmu.bin
-vendor/firmware/a630_sqe.fw
-vendor/firmware/a660_gmu.bin
-vendor/firmware/a660_sqe.fw
-vendor/firmware/a660_zap.b00
-vendor/firmware/a660_zap.b01
-vendor/firmware/a660_zap.b02
-vendor/firmware/a660_zap.elf
-vendor/firmware/a660_zap.mdt
+# Graphics (Adreno firmware) - from CPH2467_15.0.0.1910(EX01)
+vendor/firmware/a615_zap.b00|55c1a14a5699d05f796a982448711159f8208951
+vendor/firmware/a615_zap.b01|ae32c5e7eb7a8205a1654fae9643e4f713fa5160
+vendor/firmware/a615_zap.b02|4ae54047f9629f2470a5d58f3940c5eb51298b96
+vendor/firmware/a615_zap.elf|0bcf9f79380afb1d072d6042ff75ff927e2087c4
+vendor/firmware/a615_zap.mdt|024a788cca76fb3f0b4b01b3a5b2cfc99bbee4a3
+vendor/firmware/a619_gmu.bin|0c211ef8a3246d649a4ae52a926d128b61e3c264
+vendor/firmware/a630_sqe.fw|3e38a62bdb02bd3db36ff0350bf3fd840324b3ad
+vendor/firmware/a660_gmu.bin|607402e7c1c49f486258e5e02780e74fcf7311e1
+vendor/firmware/a660_sqe.fw|8e6becfbcff6ff6e64b5edb6f135cc6f656d4ee1
+vendor/firmware/a660_zap.b00|f8df59bf1c76d6cceb152cfd58142af4e0cdabb5
+vendor/firmware/a660_zap.b01|5a7ca1725004847a553aad9a3af268dcd4cae235
+vendor/firmware/a660_zap.b02|bcbdf56fca034c66a9e44242587ed25a1ffe2abe
+vendor/firmware/a660_zap.elf|7c02311741a256f3a6b782cf3e266d677e2ec539
+vendor/firmware/a660_zap.mdt|869181ef95141cb23d8d0ddb177990dcb94b3343
 
 # Graphics (Vulkan)
 vendor/lib/hw/vulkan.adreno.so
